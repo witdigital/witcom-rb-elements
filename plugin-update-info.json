@@ -1,0 +1,8 @@
+{
+  "name" : "Wit Commander",
+  "version" : "2.0",
+  "download_url" : "https://github.com/ryanemitchell/wit-commander-test/archive/master.zip",
+  "sections" : {
+    "description" : "Plugin description here. You can use HTML."
+  }
+}

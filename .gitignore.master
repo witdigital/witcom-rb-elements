@@ -1,0 +1,6 @@
+!/dist/
+!/vendor/
+/dist/*
+/vendor/*
+!/composer.lock
+!/package-lock.json
