@@ -1,6 +1,6 @@
 {
-    "name": "witdigital/witcom-starter-plugin",
-    "description": "WordPress plugin that provides base functionality for use with Wit Digital themes and plugins.",
+    "name": "witdigital/witcom-development-plugin",
+    "description": "** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.",
     "type": "wordpress-plugin",
     "require": {
         "yahnis-elsts/plugin-update-checker": "^4.9",

@@ -13,8 +13,8 @@ Starter plugin for use with witdigital/wit-commander-plugin
 
 >   Deployment and the plugin update process are not yet documented.<!--todo add deployment and plugin update docs-->
   develop and master have different ignores. Build files are committed in Master. Merge from develop to master in local and force push to origin to force master to build the latest version.
- 
- 
+
+
 ## Creating a new WitCom Plugin Project
 1. Create new repository
 2. Configure new repository
@@ -66,7 +66,7 @@ https://github.com/new/import
 
         Content here: https://github.com/witdigital/witdev-files/blob/master/misc-helpers/post-checkout
 
-    2. Make post checkout executable 
+    2. Make post checkout executable
 
         ```chmod 755 post-checkout``` or ```chmod 755 .git/hooks/post-checkout```
 
@@ -86,16 +86,16 @@ https://github.com/new/import
 6. Open composer.json
     1. Update Name
     2. Update Descriptions
-7. Perform Find replaces 
+7. Perform Find replaces
 
-    ```witcom_starter to witcom-[newPLuginName]```
-    ```witcom-starter to witcom_[newPLuginName]```
+    ```witcom_development to witcom-[newPLuginName]```
+    ```witcom-development to witcom_[newPLuginName]```
 
-### 5. Initial Project Commit 
+### 5. Initial Project Commit
 
     git commit -a -m "start witcom-[newPLuginName]"
-    
-### 6. Setup master branch 
+
+### 6. Setup master branch
 
 1. Create master branch and manually checkout
 
@@ -104,18 +104,18 @@ https://github.com/new/import
     ```checkout master``` (this will update the ignores for the master branch)
 
 2. Switch back to develop branch
- 
+
     ```checkout develop``` (this will update the ignore for the develop branch)
 
 ### 7. Push all branches to github
 
 1. Push all branched
-    
+
     ```git push --all origin```
-    
+
     Force push necessary: ```git push --all origin --force ```
-    
-    
+
+
 ### 8. Check that master action is working
 
 When action is complete check the master branch for a commit. "Automated publish: xxxxx"
@@ -125,7 +125,7 @@ You are almost done!
 
 ### 9. Test in local envrionment
 
-    
+
 1. activate plugin - it should activate, but not really work
 2. composer install
 3. npm install
@@ -135,7 +135,7 @@ You are almost done!
     3. npm run watch
 
     Load front end of site. If all is well would will get a javascript alert with the plugin name. Disable this in src/assets/scripts/app.js
-    
+
     ### 10. Delete this file.
     1. Delete README.md use readme.txt or recreate if necessary
 

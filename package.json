@@ -1,7 +1,7 @@
 {
-  "name": "witcom-starter-plugin",
+  "name": "witcom-development-plugin",
   "version": "0.0.1",
-  "description": "Wit Com Starter Plugin to be used with WitCom parent plugin by Wit Digital",
+  "description": "** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",

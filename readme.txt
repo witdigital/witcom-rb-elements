@@ -1,4 +1,4 @@
-=== WitComPluginStarter ===
+=== WitCom Development Plugin ===
 Contributors: Ryan E. Mitchell
 Requires at least: 5.4
 Tested up to: 5.4
@@ -7,11 +7,11 @@ Stable tag: stable
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.
 
 == Installation ==
 

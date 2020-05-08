@@ -34,7 +34,7 @@ import 'jquery';
     Global JS
    ========================================================================== */
 document.addEventListener("DOMContentLoaded", function() {
-  window.alert('witcom-starter plugin JS loaded')
+  window.alert('witcom-development plugin JS loaded')
 });
 
 
