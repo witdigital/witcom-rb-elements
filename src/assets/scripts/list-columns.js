@@ -7,13 +7,13 @@ const { PanelBody, SelectControl } = wp.components;
 const { addFilter } = wp.hooks;
 const { __ } = wp.i18n;
 
-// Enable spacing control on the following blocks
-const enableSpacingControlOnBlocks = [
+// Enable column control on the following blocks
+const enableColumnControlOnBlocks = [
   "core/list"
 ];
 
-// Available spacing control options
-const spacingControlOptions = [
+// Available column control options
+const columnControlOptions = [
   {
     label: __( '1' ),
     value: '1',
@@ -33,49 +33,49 @@ const spacingControlOptions = [
 ];
 
 /**
- * Add spacing control attribute to block.
+ * Add column control attribute to block.
  *
  * @param {object} settings Current block settings.
  * @param {string} name Name of block.
  *
  * @returns {object} Modified block settings.
  */
-const addSpacingControlAttribute = ( settings, name ) => {
+const addColumnControlAttribute = ( settings, name ) => {
   // Do nothing if it's another block than our defined ones.
-  if ( ! enableSpacingControlOnBlocks.includes( name ) ) {
+  if ( ! enableColumnControlOnBlocks.includes( name ) ) {
     return settings;
   }
 
   // Use Lodash's assign to gracefully handle if attributes are undefined
   settings.attributes = assign( settings.attributes, {
-    spacing: {
+    column: {
       type: 'string',
-      default: spacingControlOptions[ 0 ].value,
+      default: columnControlOptions[ 0 ].value,
     },
   } );
 
   return settings;
 };
 
-addFilter( 'blocks.registerBlockType', 'extend-block-example/attribute/spacing', addSpacingControlAttribute );
+addFilter( 'blocks.registerBlockType', 'extend-block-example/attribute/column', addColumnControlAttribute );
 
 /**
- * Create HOC to add spacing control to inspector controls of block.
+ * Create HOC to add column control to inspector controls of block.
  */
-const withSpacingControl = createHigherOrderComponent( ( BlockEdit ) => {
+const withColumnControl = createHigherOrderComponent( ( BlockEdit ) => {
   return ( props ) => {
     // Do nothing if it's another block than our defined ones.
-    if ( ! enableSpacingControlOnBlocks.includes( props.name ) ) {
+    if ( ! enableColumnControlOnBlocks.includes( props.name ) ) {
       return (
         <BlockEdit { ...props } />
       );
     }
 
-    const { spacing } = props.attributes;
+    const { column } = props.attributes;
 
-    // add has-spacing-xy class to block
-    if ( spacing ) {
-      props.attributes.className = `has-cols-${ spacing }`;
+    // add has-column-xy class to block
+    if ( column ) {
+      props.attributes.className = `has-cols-${ column }`;
     }
 
     return (
@@ -83,16 +83,16 @@ const withSpacingControl = createHigherOrderComponent( ( BlockEdit ) => {
         <BlockEdit { ...props } />
         <InspectorControls>
           <PanelBody
-            title={ __( 'My Spacing Control' ) }
+            title={ __( 'My Column Control' ) }
             initialOpen={ true }
           >
             <SelectControl
-              label={ __( 'Spacing' ) }
-              value={ spacing }
-              options={ spacingControlOptions }
-              onChange={ ( selectedSpacingOption ) => {
+              label={ __( 'Column' ) }
+              value={ column }
+              options={ columnControlOptions }
+              onChange={ ( selectedColumnOption ) => {
                 props.setAttributes( {
-                  spacing: selectedSpacingOption,
+                  column: selectedColumnOption,
                 } );
               } }
             />
@@ -101,9 +101,9 @@ const withSpacingControl = createHigherOrderComponent( ( BlockEdit ) => {
       </Fragment>
     );
   };
-}, 'withSpacingControl' );
+}, 'withColumnControl' );
 
-addFilter( 'editor.BlockEdit', 'extend-block-example/with-spacing-control', withSpacingControl );
+addFilter( 'editor.BlockEdit', 'extend-block-example/with-column-control', withColumnControl );
 
 /**
  * Add margin style attribute to save element of block.
@@ -114,9 +114,9 @@ addFilter( 'editor.BlockEdit', 'extend-block-example/with-spacing-control', with
  *
  * @returns {object} Modified props of save element.
  */
-const addSpacingExtraProps = ( saveElementProps, blockType, attributes ) => {
+const addColumnExtraProps = ( saveElementProps, blockType, attributes ) => {
   // Do nothing if it's another block than our defined ones.
-  if ( ! enableSpacingControlOnBlocks.includes( blockType.name ) ) {
+  if ( ! enableColumnControlOnBlocks.includes( blockType.name ) ) {
     return saveElementProps;
   }
 
@@ -127,12 +127,12 @@ const addSpacingExtraProps = ( saveElementProps, blockType, attributes ) => {
     4: '4',
   };
 
-  if ( attributes.spacing in margins ) {
+  if ( attributes.column in margins ) {
     // Use Lodash's assign to gracefully handle if attributes are undefined
-    assign( saveElementProps, { style: { 'column-count': margins[ attributes.spacing ] } } );
+    assign( saveElementProps, { style: { 'column-count': margins[ attributes.column ] } } );
   }
 
   return saveElementProps;
 };
 
-addFilter( 'blocks.getSaveContent.extraProps', 'extend-block-example/get-save-content/extra-props', addSpacingExtraProps );
+addFilter( 'blocks.getSaveContent.extraProps', 'extend-block-example/get-save-content/extra-props', addColumnExtraProps );
