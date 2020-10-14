@@ -22,5 +22,8 @@ WitCom plugin for Rapid Build elements and blocks.
 
 == Changelog ==
 
+= 0.0.2 =
+Cleaning up acf blocks
+
 = 0.0.1 =
 In the beginning...
