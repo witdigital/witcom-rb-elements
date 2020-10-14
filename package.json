@@ -23,28 +23,28 @@
   },
   "homepage": "https://gitlab.com/wit-digital/wit-plugins/wit-commander#readme",
   "devDependencies": {
-    "@babel/preset-react": "^7.9.4",
-    "@tinypixelco/laravel-mix-wp-blocks": "^1.0.0",
-    "@wordpress/babel-preset-default": "^4.13.0",
-    "@wordpress/dependency-extraction-webpack-plugin": "^2.6.0",
+    "@babel/preset-react": "^7.10.4",
+    "@tinypixelco/laravel-mix-wp-blocks": "^1.1.0",
+    "@wordpress/babel-preset-default": "^4.19.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^2.8.0",
     "cross-env": "^7.0.2",
-    "laravel-mix": "^5.0.4",
+    "laravel-mix": "^5.0.7",
     "laravel-mix-copy-watched": "^2.2.4",
     "laravel-mix-purgecss": "^5.0.0-rc.3",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
     "resolve-url-loader": "^3.1.1",
-    "sass": "^1.26.5",
+    "sass": "^1.27.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
-    "@wordpress/blocks": "^6.16.0",
+    "@wordpress/blocks": "^6.23.0",
     "apollo-boost": "^0.4.9",
     "apollo-client": "^2.6.10",
-    "graphql": "^15.0.0",
-    "graphql-tag": "^2.10.3",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
     "lodash.assign": "^4.2.0"
   }
 }
