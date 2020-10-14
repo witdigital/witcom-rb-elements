@@ -1,6 +1,6 @@
-# WitCom Plugin Starter
+# WitCom Rapid Build Elements
 
-Starter plugin for use with witdigital/wit-commander-plugin
+Blocks and other element that are used with the WitCommander plugin.
 
 ## Notes
 
@@ -8,7 +8,7 @@ Starter plugin for use with witdigital/wit-commander-plugin
 *  Master branch on github does a production build when pushed to.
 *  Use the release/xxx scheme for incremental releases.
 *  Deployment and Plugin Update process not yet documented.<!--todo add deployment and plugin update docs-->
-*  Submodules for different block types that will be able to be dropped in are being created.
+*  Submodules for different block types that will be able to be dropped in are in the process of being created.
 *  Empty folders exist for a more uniform structure across different WitCom plugins.
 
 >   Deployment and the plugin update process are not yet documented.<!--todo add deployment and plugin update docs-->
@@ -123,7 +123,7 @@ When action is complete check the master branch for a commit. "Automated publish
 You are almost done!
 
 
-### 9. Test in local envrionment
+### 9. Test in local envriment
 
 
 1. activate plugin - it should activate, but not really work
