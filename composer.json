@@ -1,9 +1,9 @@
 {
     "name": "witdigital/witcom-rb-elements-plugin",
-    "description": "** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.",
+    "description": "WitCom plugin for Rapid Build elements and blocks.",
     "type": "wordpress-plugin",
     "require": {
-        "yahnis-elsts/plugin-update-checker": "^4.9",
+        "yahnis-elsts/plugin-update-checker": "^4.10",
         "scssphp/scssphp": "1.0.9"
 },
     "require-dev": {

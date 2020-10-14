@@ -1,7 +1,7 @@
 {
   "name": "witcom-rb-elements-plugin",
   "version": "0.0.1",
-  "description": "** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.",
+  "description": "WitCom plugin for Rapid Build elements and blocks.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
