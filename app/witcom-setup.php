@@ -16,27 +16,6 @@
 
     function witcom_rb_elements_assets() {
 
-//        // Load manifest from mix.blocks if necessary
-//        if (file_exists(__DIR__ . '/../dist/app.asset.php')) {
-//            $asset_file = include( plugin_dir_path( __FILE__ ) . '/../dist/app.asset.php');
-//        // mix.blocks enqueue js
-//            wp_enqueue_script(
-//                'witcom-rb-elements-scripts',
-//                plugin_dir_url( __DIR__ ) . 'dist/app.js',
-//                $asset_file['dependencies'],
-//                $asset_file['version'],
-//                true
-//            );
-//        } else {
-//        // Regular enqueue js
-//            wp_enqueue_script(
-//                'witcom-rb-elements-scripts',
-//                plugin_dir_url( __DIR__ ) . '/dist/app.js',
-//                array(  'jquery' ),
-//                true
-//            );
-//        }
-
         wp_enqueue_script(
             'witcom-rb-elements',
             plugin_dir_url( __DIR__ ) . '/dist/app.js',
@@ -47,7 +26,7 @@
         wp_enqueue_style( 'witcom-rb-elements-styles', plugin_dir_url( __DIR__ ) . '/../dist/app.css' );
     }
 
-    add_action( 'wp_enqueue_scripts', 'witcom_rb_elements_assets' );
+//    add_action( 'wp_enqueue_scripts', 'witcom_rb_elements_assets' );
 
 /* ==========================================================================
    Enqueue Editor Styles and Scripts
@@ -77,6 +56,6 @@
     }
 
 // Hook the enqueue functions into the editor
-    add_action( 'enqueue_block_editor_assets', 'witcom_rb_elements_block_plugin_editor_scripts' );
+//    add_action( 'enqueue_block_editor_assets', 'witcom_rb_elements_block_plugin_editor_scripts' );
 
 

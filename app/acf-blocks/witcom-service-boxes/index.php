@@ -15,13 +15,13 @@
 /* ===========================  Includes and Dependencies  ========================== */
 
 //    ACF Fields for this block
-    include_once 'lib/acf-fields.php';
+//    include_once 'lib/acf-fields.php';
 
 //   Hooks for this block
-    include_once 'lib/hooks.php';
+//    include_once 'lib/hooks.php';
 
 //  Global dynamic styles for this block
-//   todo evaluate if block global styles are necessary
+//   todo evaluate if block global styles are necessary. Remove from where we create the ACF block below.
 /* include_once 'lib/enqueue-dynamic-styles.php'; */
 
 /* ==========================================================================
@@ -29,8 +29,8 @@
   ========================================================================== */
 
     /**
-     *  Register Coupon Grid Block
-     *  ACF/witcom-coupon-grid
+     *  Register Witcom Services Boxes
+     *  ACF/witcom-services-boxes
      *
      */
     function witcom_services_boxes_register_blocks() {
