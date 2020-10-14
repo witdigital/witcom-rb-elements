@@ -52,6 +52,10 @@ const addColumnControlAttribute = ( settings, name ) => {
       type: 'string',
       default: columnControlOptions[ 0 ].value,
     },
+    mobileColumn: {
+      type: 'string',
+      default: columnControlOptions[ 0 ].value,
+    },
   } );
 
   return settings;
@@ -71,11 +75,15 @@ const withColumnControl = createHigherOrderComponent( ( BlockEdit ) => {
       );
     }
 
-    const { column } = props.attributes;
+    const { column, mobileColumn } = props.attributes;
 
     // add has-column-xy class to block
     if ( column ) {
       props.attributes.className = `has-cols-${ column }`;
+    }
+
+    if ( mobileColumn ) {
+      props.attributes.className = props.attributes.className+` has-cols-mobile-${ mobileColumn }` ;
     }
 
     return (
@@ -93,6 +101,16 @@ const withColumnControl = createHigherOrderComponent( ( BlockEdit ) => {
               onChange={ ( selectedColumnOption ) => {
                 props.setAttributes( {
                   column: selectedColumnOption,
+                } );
+              } }
+            />
+            <SelectControl
+              label={ __( 'Mobile Column' ) }
+              value={ mobileColumn }
+              options={ columnControlOptions }
+              onChange={ ( selectedColumnOption ) => {
+                props.setAttributes( {
+                  mobileColumn: selectedColumnOption,
                 } );
               } }
             />

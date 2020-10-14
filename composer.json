@@ -1,5 +1,5 @@
 {
-    "name": "witdigital/witcom-development-plugin",
+    "name": "witdigital/witcom-rb-elements-plugin",
     "description": "** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.",
     "type": "wordpress-plugin",
     "require": {

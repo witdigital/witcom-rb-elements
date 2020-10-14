@@ -1,5 +1,5 @@
 {
-  "name": "witcom-development-plugin",
+  "name": "witcom-rb-elements-plugin",
   "version": "0.0.1",
   "description": "** NOT FOR PRODUCTION ** WitCom plugin for development outside of existing projects. Trying new techniques etc.",
   "main": "index.js",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.9.4",
     "@tinypixelco/laravel-mix-wp-blocks": "^1.0.0",
-    "@wordpress/babel-preset-default": "^4.12.1",
+    "@wordpress/babel-preset-default": "^4.13.0",
     "@wordpress/dependency-extraction-webpack-plugin": "^2.6.0",
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.4",
@@ -40,10 +40,11 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
-    "@wordpress/blocks": "^6.15.0",
-    "apollo-boost": "^0.4.7",
-    "apollo-client": "^2.6.8",
+    "@wordpress/blocks": "^6.16.0",
+    "apollo-boost": "^0.4.9",
+    "apollo-client": "^2.6.10",
     "graphql": "^15.0.0",
-    "graphql-tag": "^2.10.3"
+    "graphql-tag": "^2.10.3",
+    "lodash.assign": "^4.2.0"
   }
 }

@@ -88,8 +88,8 @@ https://github.com/new/import
     2. Update Descriptions
 7. Perform Find replaces
 
-    ```witcom_development to witcom-[newPLuginName]```
-    ```witcom-development to witcom_[newPLuginName]```
+    ```witcom_rb_elements to witcom-[newPLuginName]```
+    ```witcom-rb-elements to witcom_[newPLuginName]```
 
 ### 5. Initial Project Commit
 

@@ -26,6 +26,13 @@ require("@tinypixelco/laravel-mix-wp-blocks");
 /* ===  Variables  ==== */
 let mix = require('laravel-mix');
 
+mix.webpackConfig({
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  }
+});
+
 /* ==========================================================================
     ACF Block Assets
     Used for blocks that do not use variables from PHP in styles or scripts.
@@ -69,9 +76,4 @@ mix.options({
 
 mix.setPublicPath('dist');
 
-mix.webpackConfig({
-  externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM'
-  }
-});
+
