@@ -22,6 +22,9 @@ WitCom plugin for Rapid Build elements and blocks.
 
 == Changelog ==
 
+= 0.0.4 =
+Layouts added to services
+
 = 0.0.3 =
 Update Project Name
 
