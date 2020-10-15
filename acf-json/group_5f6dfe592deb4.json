@@ -70,6 +70,31 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_5f87841904dd5",
+            "label": "Layout",
+            "name": "witcom_services_boxes_layout",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "style_a": "Style A",
+                "style_b": "Style B"
+            },
+            "default_value": "style_a",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_5f6dfe65cf997",
             "label": "Services",
             "name": "witcom_services_boxes_services",
@@ -223,5 +248,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1602683972
+    "modified": 1602716793
 }
