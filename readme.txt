@@ -22,6 +22,9 @@ WitCom plugin for Rapid Build elements and blocks.
 
 == Changelog ==
 
+= 0.0.6 =
+clean up
+
 = 0.0.5 =
 Add SVG support to Layout B
 
