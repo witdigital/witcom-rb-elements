@@ -3,7 +3,7 @@
     Plugin Name: WitCom Rapid Build Elements
     Plugin URI: https://witdelivers.com
     Description: WitCom plugin for Rapid Build elements and blocks.
-    Version: 0.0.6
+    Version: 0.0.7
     Author: Wit Digital
     Author URI: https://witdelivers.come
     Text Domain: witcom
