@@ -141,7 +141,7 @@
                     "key": "field_5f6dfed9d8f41",
                     "label": "Icon",
                     "name": "service_icon",
-                    "type": "image",
+                    "type": "file",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -151,19 +151,10 @@
                         "id": ""
                     },
                     "return_format": "array",
-                    "preview_size": "medium",
                     "library": "all",
-                    "min_width": "",
-                    "min_height": "",
                     "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
                     "max_size": "",
-                    "mime_types": "",
-                    "show_column": 0,
-                    "show_column_weight": 1000,
-                    "allow_quickedit": 0,
-                    "allow_bulkedit": 0
+                    "mime_types": ""
                 },
                 {
                     "key": "field_5f6dfee5d8f42",
@@ -248,5 +239,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1602716793
+    "modified": 1603294409
 }
