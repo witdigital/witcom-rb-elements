@@ -28,10 +28,6 @@
             $service_icon_path = get_attached_file( $service_icon_id );
             $service_description = get_sub_field('service_description');
             $service_page_link = get_sub_field('service_page_link');
-
-
-            echo file_get_contents($service_icon);
-            include $service_icon_url;
             ?>
 
 
