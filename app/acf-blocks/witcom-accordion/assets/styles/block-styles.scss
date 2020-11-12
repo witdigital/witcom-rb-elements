@@ -1,0 +1,16 @@
+/* ==========================================================================
+    * Filename: block-styles.scss
+    * Description: Styles for the block to be compiled to /[plugin-name]/dist
+    ** If used this must be setup in /webpack.mix.js
+    * Author:  Ryan E. Mitchell
+    ========================================================================== */
+
+/* ===========================  Define Vars  ========================== */
+$color: green;
+
+/* ===========================  Styling  ========================== */
+.witcom-block {
+  .[blockname] {
+
+  }/* End of .[blockname] */
+} /* End of .witcom-block */

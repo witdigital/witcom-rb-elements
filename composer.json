@@ -1,0 +1,31 @@
+{
+    "name": "witdigital/witcom-rb-elements-plugin",
+    "description": "WitCom plugin for Rapid Build elements and blocks.",
+    "type": "wordpress-plugin",
+    "require": {
+        "scssphp/scssphp": "1.0.9"
+},
+    "require-dev": {
+    },
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Ryan E. Mitchell",
+            "email": "ryan@witdelivers.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "lint": [
+            "phpcs --ignore=index.php,vendor,resources,storage,dist --extensions=php --standard=PSR12 ."
+        ],
+        "post-autoload-dump": [
+        ]
+    }
+}
